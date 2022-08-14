@@ -161,14 +161,14 @@ std::string formatTime(int seconds) {
 
 int main(int argc, const char **argv) {
   ArgumentParser parser(argv[0], "Generate visuals video from audio file");
-  parser.add_argument("-i", "--input", "input file", true);
-  parser.add_argument("-o", "--output", "output file", true);
+  parser.add_argument("-i", "--input", "input audio file", true);
+  parser.add_argument("-o", "--output", "output video file", true);
   parser.add_argument("-w", "--width", "video width (default 1280)", false);
   parser.add_argument("-h", "--height", "video height (default 720)", false);
-  parser.add_argument("-d", "--duration", "preset duration", false);
+  parser.add_argument("-d", "--duration", "preset duration in seconds (default 15)", false);
   parser.add_argument("-p", "--presets", "presets (comma separated)", false);
   parser.add_argument("-l", "--layer", "filename of overlay image", false);
-  parser.add_argument("-m", "--watermark", "filename of watermark", false);
+  parser.add_argument("-m", "--watermark", "filename of watermark image", false);
 
   // parser.enable_help();
   auto parseErr = parser.parse(argc, argv);

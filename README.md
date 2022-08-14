@@ -44,15 +44,14 @@ make
 ```
 Usage: ./groovy.video [options...]
 Options:
-    -i, --input            input file              (Required)
-    -o, --output           output file             (Required)
+    -i, --input            input audio file        (Required)
+    -o, --output           output video file       (Required)
     -w, --width            video width (default 1280)
     -h, --height           video height (default 720)
-    -d, --duration         preset duration
+    -d, --duration         preset duration in seconds (default 15)
     -p, --presets          presets (comma separated)
     -l, --layer            filename of overlay image
-    -m, --watermark        filename of watermark
-
+    -m, --watermark        filename of watermark image
 ```
 
 Example:
