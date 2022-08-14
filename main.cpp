@@ -166,7 +166,7 @@ int main(int argc, const char **argv) {
   parser.add_argument("-w", "--width", "video width (default 1280)", false);
   parser.add_argument("-h", "--height", "video height (default 720)", false);
   parser.add_argument("-d", "--duration", "preset duration in seconds (default 15)", false);
-  parser.add_argument("-p", "--presets", "presets (comma separated)", false);
+  parser.add_argument("-p", "--presets", "presets (comma separated crc32 of filename)", false);
   parser.add_argument("-l", "--layer", "filename of overlay image", false);
   parser.add_argument("-m", "--watermark", "filename of watermark image", false);
 

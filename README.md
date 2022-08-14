@@ -49,7 +49,7 @@ Options:
     -w, --width            video width (default 1280)
     -h, --height           video height (default 720)
     -d, --duration         preset duration in seconds (default 15)
-    -p, --presets          presets (comma separated)
+    -p, --presets          presets (comma separated crc32 of filename)
     -l, --layer            filename of overlay image
     -m, --watermark        filename of watermark image
 ```
