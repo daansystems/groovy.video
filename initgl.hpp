@@ -1,11 +1,4 @@
-// g++  glad/egl.c glad/gl.c egl.cpp -I glad -lpthread -ldl
 #include <stdio.h>
-
-#include <stdbool.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
 
 extern "C" {
 #include <EGL/egl.h>
